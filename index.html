@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Reservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Reservation System</h1>
+
+    <div class="movie-selector">
+      <label for="movie">Choose a movie:</label>
+      <select id="movie">
+        <option value="10">Avengers: Endgame ($10)</option>
+        <option value="12">Oppenheimer ($12)</option>
+        <option value="8">The Super Mario Bros ($8)</option>
+      </select>
+    </div>
+
+    <div class="seating">
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seat(s) for a total of $<span id="total">0</span>.
+    </p>
+
+    <button id="bookBtn">Book Now</button>
+    <p id="confirmation" class="confirmation"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
