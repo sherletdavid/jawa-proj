@@ -1,0 +1,12 @@
+"""run in mysql"""
+CREATE DATABASE movie_booking;
+
+USE movie_booking;
+
+CREATE TABLE bookings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  movie_id INT,
+  seat_row CHAR(1),
+  seat_number INT,
+  status VARCHAR(20) DEFAULT 'booked'
+);
